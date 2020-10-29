@@ -9,6 +9,7 @@ namespace Project_ASP_CORE_API.Model
     public class Role_n_Permission
     {
         public string role_id { set; get; }
-        public List<Permission> permission_id { set; get; }
+        public ICollection<Permission> permissions { set; get; }
+        public ICollection<Role> roles { get; set; }
     }
 }
