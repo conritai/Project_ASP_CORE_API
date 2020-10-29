@@ -48,7 +48,7 @@ namespace Project_ASP_CORE_API.Connection
 
             modelBuilder.Entity<Role_n_Permission>(entity =>
             {
-                entity.ToTable("")
+                entity.ToTable("");
             });
         }
     }
