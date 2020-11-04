@@ -29,7 +29,7 @@ namespace Project_ASP_CORE_API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<DbConnection>(options =>
+            services.AddDbContext<Context>(options =>
                     options.UseNpgsql(Configuration.GetConnectionString("DbConnection")));
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>

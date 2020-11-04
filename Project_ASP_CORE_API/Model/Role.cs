@@ -9,10 +9,10 @@ namespace Project_ASP_CORE_API.Model
     public class Role
     {
         [Key]
-        public string role_id { get; set; }
-        public string role_name { get; set; }
-        public string create_role_at { get; set; }
-        public string update_role_at { get; set; }
-
+        public Guid Role_id { get; set; }
+        public string Role_name { get; set; }
+        public DateTime Create_role_at { get; set; }
+        public DateTime Update_role_at { get; set; }
+        public ICollection<Role_n_Permission> Role_n_Permissions { get; set; }
     }
 }
