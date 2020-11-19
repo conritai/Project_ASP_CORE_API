@@ -11,12 +11,12 @@ namespace Project_ASP_CORE_API.Services
 {
     public interface IUserService
     {
-        Task<bool> Authenticate(LoginRequest request);
+        //Task<bool> Authenticate(LoginRequest request);
     }
 
-    public class UserService : IUserService
+    public class UserService //: IUserService
     {
-        private Context _context;
+        /*private Context _context;
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
         private readonly RoleManager<Role> _roleManager;
@@ -36,6 +36,6 @@ namespace Project_ASP_CORE_API.Services
         public Task<bool> Authenticate(LoginRequest request)
         {
             throw new NotImplementedException();
-        }
+        }*/
     }
 }
