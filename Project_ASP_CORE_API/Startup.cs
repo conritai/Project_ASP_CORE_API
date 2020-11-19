@@ -57,9 +57,9 @@ namespace Project_ASP_CORE_API
             });
 
             //Declare DI
-            services.AddTransient<UserManager<User>, UserManager<User>>();
+            /*services.AddTransient<UserManager<User>, UserManager<User>>();
             services.AddTransient<SignInManager<User>, SignInManager<User>>();
-            services.AddTransient<RoleManager<Role>, RoleManager<Role>>();
+            services.AddTransient<RoleManager<Role>, RoleManager<Role>>();*/
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
