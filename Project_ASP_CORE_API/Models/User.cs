@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Project_ASP_CORE_API.Model
@@ -20,6 +21,7 @@ namespace Project_ASP_CORE_API.Model
         public string Username { get; set; }
 
         [Required(ErrorMessage = "Please fill in this blank !!")]
+        [JsonIgnore]
         public string Password { get; set; }
 
         [Required(ErrorMessage = "Please fill in this blank !!")]
